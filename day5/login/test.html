@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+        .forms{
+            margin: 2%;
+        }
+        .inputs{
+            margin:0.5% 0% 0.5% 0%;
+        }
+    </style>
+</head>
+<body>
+    <p>Login:</p>
+    <form action="signin" method="POST" class="forms">
+        <input class = "inputs" type="text" name="username" placeholder="Username" />
+        <br>
+        <input class = "inputs" type="password" name="password" placeholder="Password" />
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Create New User:</p>
+    <form action="signup" method="POST" class="forms">
+        <input class = "inputs" type="text" name="username" placeholder="Username" />
+        <br>
+        <input class = "inputs" type="password" name="password" placeholder="Password" />
+        <br>
+        <button type="submit">Create New User</button>
+    </form>
+</body>
+</html>
