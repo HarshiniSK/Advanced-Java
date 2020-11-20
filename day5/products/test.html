@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+        .options{
+            padding: 2%;
+        }
+        .inputs{
+            margin: 1% 0% 1% 0%;
+        }
+    </style>
+</head>
+<body>
+    <form action="productSearch" method="post">
+
+        <div class="options">
+            <input type="radio" id="id" name="option" value="id">
+            <label for="id">Search by ID</label><br>
+            <input type="radio" id="name" name="option" value="name">
+            <label for="name">Search by Name</label><br>
+            <input type="radio" id="price" name="option" value="price">
+            <label for="price">Search by Price</label>
+        </div>
+        <br>
+        <input class="inputs" type="text" placeholder="Search..." name="text"/>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
